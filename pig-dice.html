@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Dice Game</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="col-md-12">
+      <h1>Dice Game!</h1>
+    </div>
+
+        <div class="row-players">
+
+          <div class="col-md-5">
+
+            <form id="frm-player-1">
+              <div class="form-group">
+                <label for="new-player-1-name">Player One</label>
+                <!-- <input type="radio" name="player" id="player-1-radio" value="player-1" disabled = "disabled" checked="checked" /> -->
+                <input type="text" class="form-control" id="new-player-1-name" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <button type="submit" id="btn-add-player-1" class="btn btn-primary" >Add Player</button>
+              </div>
+            </form>
+
+<div class="player-1-stats">
+            <form id="frm-player-1-stats">
+
+              <div class="form-group">
+                <p><u><strong>Dice Roll: </strong></u></p>
+                <h1 id="player-1-rolls"></h1>
+              </div>
+              <div class="form-group">
+                <p><u><strong>Turn Score: </strong></u></p>
+                <h2 id="player-1-turn-score"></h2>
+              </div>
+              <div class="form-group">
+                <p><u><strong>Total Score: </strong></u></p>
+                <h3 id="player-1-total-score"></h3>
+              </div>
+              <div class="form-group">
+                <p><u><strong>Turn Statistics:</strong></u></p>
+                <ul id="player-1-turns"></ul>
+              </div>
+            </form>
+</div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="form-group">
+              <button class="btn-primary btn-sm btn-roll" id="btn-roll    ">Roll Dice?</button>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-sm btn-hold" id="btn-hold" disabled="disabled">Hold Turn?</button>
+            </div>
+          </div>
+
+
+          <div class="col-md-5">
+
+            <form id="frm-player-2">
+              <div class="form-group">
+                <label for="new-player-2-name">Player Two</label>
+                <!-- <input type="radio" name="player" id="player-2-radio" value="player-2" disabled = "disabled"/> -->
+                <input type="text" class="form-control" id="new-player-2-name" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <button type="submit" id="btn-add-player-2" class="btn btn-primary" >Add Player</button>
+              </div>
+            </form>
+
+<div class="player-2-stats">
+            <form id="frm-player-2-stats">
+              <div class="form-group">
+                <p><u><strong>Dice Roll: </strong></u></p>
+                <h1 id="player-2-rolls"></h1>
+              </div>
+              <div class="form-group">
+                <p><u><strong>Turn Score: </strong></u></p>
+                <h2 id="player-2-turn-score"></h2>
+              </div>
+              <div class="form-group">
+                <p><u><strong>Total Score: </strong></u></p>
+                <h3 id="player-2-total-score"></h3>
+              </div>
+              <div class="form-group">
+                <p><u><strong>Turn Statistics: </strong></u></p>
+                <ul id="player-2-turns"></ul>
+              </div>
+            </form>
+</div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
